@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* DEFININDO VARIÁVEIS DE CSS */
+/* Primary Colors */
+/* Auxiliary Colors */
+/* White/Black Colors */
+/* Gradient Colors */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body#home-admin-panel header {
+  position: fixed;
+  background: #11244B;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+}
+body#home-admin-panel header .icon-menu {
+  width: 100%;
+  text-align: left;
+}
+body#home-admin-panel header .icon-menu label {
+  width: 25px;
+  height: 25px;
+}
+body#home-admin-panel .sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  margin-top: 60px;
+  padding-top: 30px;
+  left: 0;
+  background: #11244B;
+  transition: 0.5s;
+  transition-property: left;
+}
+body#home-admin-panel .sidebar .center {
+  text-align: center;
+}
+body#home-admin-panel .sidebar .image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+body#home-admin-panel .sidebar h4 {
+  color: #CCC;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+body#home-admin-panel .sidebar a {
+  color: #FFF;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+body#home-admin-panel .sidebar a:hover {
+  background: #51b3ec;
+}
+body#home-admin-panel .sidebar ion-icon {
+  padding-right: 10px;
+}
+body#home-admin-panel label #sidebar-btn {
+  z-index: 1;
+  position: fixed;
+  color: #FFF;
+  font-size: 25px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition-property: color;
+}
+body#home-admin-panel label #sidebar-btn:hover {
+  color: #51b3ec;
+}
+body#home-admin-panel #check:checked ~ .sidebar {
+  left: -190px;
+}
+body#home-admin-panel #check:checked ~ .sidebar a span {
+  display: none;
+}
+body#home-admin-panel #check:checked ~ .sidebar h4 {
+  display: none;
+}
+body#home-admin-panel #check:checked ~ .sidebar a {
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+}
+body#home-admin-panel .content {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  padding-top: 75px;
+  padding-left: 266px;
+  margin-bottom: 120px;
+}
+body#home-admin-panel #check:checked ~ .content {
+  margin-left: 60px;
+  padding-left: 16px;
+}
+body#home-admin-panel #check {
+  display: none;
+}
+
+.title-page {
+  color: #11244B;
+  font-weight: bold;
+}
+
+#login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login-page .form-group {
+  margin-top: 24px;
+}
+#login-page .btn-login {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* INDEX */
+#index {
+  font-family: "Noto Sans", sans-serif;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 75px;
+  text-align: center;
+}
+.header .line {
+  width: 120px;
+  border: 1px solid #f57676;
+  margin: 0 auto;
+}
+.header .hmc-title {
+  color: #f57676;
+  font-size: 4rem;
+}
+.header .eventCouple {
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  color: #c25f5f;
+}
+
+.main-content .mc-title p {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 2.3rem;
+}
+.main-content .mc-description {
+  text-align: center;
+  margin-bottom: 76px;
+}
+.main-content .mc-table {
+  padding: 0 20%;
+}
+.main-content .mc-table .table {
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 0.8em;
+}/*# sourceMappingURL=style.css.map */
